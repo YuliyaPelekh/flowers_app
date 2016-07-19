@@ -1,0 +1,22 @@
+$light-blue: #B0EDF7;
+$braun: #998976;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: $braun;
+	font-family: Helvetica;
+}
+
+.main-wrapper{
+    min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+

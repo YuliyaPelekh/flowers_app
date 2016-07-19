@@ -1,0 +1,96 @@
+$light-blue: #B0EDF7;
+$braun: #998976;
+
+.sidebar{
+	min-width: 290px;
+	min-height: 100%;
+}
+
+
+.flowers{
+	min-height: 100%;
+	min-width: 76%;
+	background-color: $braun;
+		border-right: 5px solid $light-blue;
+
+	.flowers-window{
+    	height: 100px;
+		background-color: $light-blue;
+
+		.flowers-window__button{
+		    height: 60px;
+		    width: 150px;
+		    margin-left: 50px;
+		    margin-top: 20px;
+		    border-radius: 10px;
+			color: white;
+			font-size: 18px;
+			background-color: $braun;
+		}
+
+
+	}
+
+	.flowers-sill{
+
+	    .flowers-sill-container{
+	        display: inline-block;
+	    	margin: 20px 50px;
+	    }
+
+		.flowers-sill__flower{
+			height: 200px;
+		}
+
+		.flowers-sill__number{
+			font-size: 20px;
+			font-weight: bold;
+			border: 2px solid white;
+			border-radius: 50%;
+			margin-left: 10px;
+			text-align: center;
+			margin-bottom: 10px;
+			color: white;
+		}
+
+		.flowers-sill-info-block{
+			display: inline-block;
+			margin-left: 5px;
+		}
+
+		.flowers-sill__can{
+			height: 40px;
+			display: block;
+		}
+
+		.flowers-sill__remove{
+			height: 30px;
+			display: block;
+            margin-left: 10px;
+            margin-top: 10px;
+		}
+
+		.flowers-sill__info{
+			height: 30px;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+
+		.flowers-sill__info-block:hover .flowers-sill__last{
+			display: block;
+		}
+
+		.flowers-sill__last{
+		    position: absolute;
+		    display: none;
+		    width: 100px;
+		    padding: 5px;
+		    text-align: center;
+		    border-radius: 5px;
+		    background: white;
+		    color: $braun;
+		    font-size: 12px;
+		}
+
+	}
+}

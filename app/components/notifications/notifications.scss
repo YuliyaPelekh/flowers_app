@@ -1,0 +1,29 @@
+$light-blue: #B0EDF7;
+$braun: #998976;
+
+
+.notifications-header{
+    margin-top: 20px;
+	color: white;
+	height: 60px;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.notifications-item{
+    margin: 5px 5px;
+    position: relative;
+    border-radius: 10px;
+	background-color: white;
+	color: $braun;
+	padding: 10px;
+	padding-right: 15px;
+
+	.delete{
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+}
+

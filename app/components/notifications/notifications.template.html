@@ -1,0 +1,9 @@
+<div class="notifications">
+	<h1 class="notifications-header">My notifications</h1>
+	<div class="notifications-item">Please water your flowers every 5 minutes</div>
+	<div class="notifications-item" ng-repeat="note in noteCtrl.notes track by $index">
+		{{note.date | date:'HH:mm'}} {{note.text}}
+		<span class="delete" ng-click="noteCtrl.deleteNote($index)">x</span>
+	</div>
+</div>
+</div>

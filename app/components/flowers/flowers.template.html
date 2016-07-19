@@ -1,0 +1,24 @@
+<div class="main-wrapper">
+	<div class="flowers">
+		<div class="flowers-window">
+			<button type="button" class="flowers-window__button" ng-click="flCtrl.addFlower()">Add new Flower</button>
+		</div>
+		<div class="flowers-sill">
+	   		<div class="flowers-sill-container" ng-repeat="flower in flCtrl.flowers track by $index">
+				<img class="flowers-sill__flower" src="app/images/flower2.png"/>
+				<div class="flowers-sill-info-block">
+					<div class="flowers-sill__number">{{$index + 1}}</div>
+					<img class="flowers-sill__can" src="app/images/watering_can.png" title="Click to water" ng-click="flCtrl.waterFlower($index)"/>
+					<img class="flowers-sill__remove" src="app/images/remove.png" title="Remove" ng-click="flCtrl.deleteFlower($index)"/>
+					<div class="flowers-sill__info-block">
+						<img class="flowers-sill__info" src="app/images/info.png"/>
+						<div class="flowers-sill__last">Last watered at {{flower.startDate | date:'HH:mm'}}</div>
+					</div>
+				</div>
+	  		 </div>
+		</div>
+    </div>
+    <div class="sidebar">
+		<notifications-component notes='flCtrl.notes'></notifications-component>
+	</div>
+</div>
